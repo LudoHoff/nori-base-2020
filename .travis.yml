@@ -4,7 +4,10 @@ sudo: false
 os: linux
 compiler: gcc-7
 notifications:
-  email: false
+  email:
+    recipients:
+      - ludo.hoffstetter@epfl.ch
+    on_failure: always # default: always
 
 addons:
   apt:
